@@ -13,6 +13,7 @@
 		65ADB1E11E5723D3008681BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ADB1E01E5723D3008681BC /* Assets.xcassets */; };
 		65ADB1E41E5723D3008681BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ADB1E21E5723D3008681BC /* LaunchScreen.storyboard */; };
 		65ADB1EF1E572BB6008681BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65ADB1EE1E572BB6008681BC /* GoogleService-Info.plist */; };
+		65ADB1F31E57403B008681BC /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ADB1F21E57403B008681BC /* PokeAnnotation.swift */; };
 		E7CB0B18BE01F7272E8D2A80 /* Pods_pokesearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE8C72B04165BFFBAB2DFE0 /* Pods_pokesearch.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		65ADB1E31E5723D3008681BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65ADB1E51E5723D3008681BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65ADB1EE1E572BB6008681BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		65ADB1F21E57403B008681BC /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		BE5CC420D9B0BC1CA5EACE25 /* Pods-pokesearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokesearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokesearch/Pods-pokesearch.release.xcconfig"; sourceTree = "<group>"; };
 		BEE8C72B04165BFFBAB2DFE0 /* Pods_pokesearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokesearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6508385E7924C89C083218 /* Pods-pokesearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokesearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokesearch/Pods-pokesearch.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,15 +65,32 @@
 		65ADB1D81E5723D3008681BC /* pokesearch */ = {
 			isa = PBXGroup;
 			children = (
-				65ADB1EE1E572BB6008681BC /* GoogleService-Info.plist */,
+				65ADB1F11E573E48008681BC /* Model */,
+				65ADB1F01E573E3B008681BC /* Controller */,
 				65ADB1D91E5723D3008681BC /* AppDelegate.swift */,
-				65ADB1DB1E5723D3008681BC /* ViewController.swift */,
 				65ADB1DD1E5723D3008681BC /* Main.storyboard */,
 				65ADB1E01E5723D3008681BC /* Assets.xcassets */,
 				65ADB1E21E5723D3008681BC /* LaunchScreen.storyboard */,
+				65ADB1EE1E572BB6008681BC /* GoogleService-Info.plist */,
 				65ADB1E51E5723D3008681BC /* Info.plist */,
 			);
 			path = pokesearch;
+			sourceTree = "<group>";
+		};
+		65ADB1F01E573E3B008681BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65ADB1DB1E5723D3008681BC /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		65ADB1F11E573E48008681BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65ADB1F21E57403B008681BC /* PokeAnnotation.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		6E5E8D523A3D3D9424A55B3B /* Frameworks */ = {
@@ -217,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65ADB1DC1E5723D3008681BC /* ViewController.swift in Sources */,
+				65ADB1F31E57403B008681BC /* PokeAnnotation.swift in Sources */,
 				65ADB1DA1E5723D3008681BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
